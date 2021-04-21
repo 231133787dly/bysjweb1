@@ -13,9 +13,19 @@ module.exports = {
     },
     devServer: {
         disableHostCheck: false,
-        port: 8081,
+        port: 7888,
         https: false,
         hotOnly: false,
-        proxy: null
+        proxy: {
+            '/api': {
+                /* 设置对象路径 */
+                target: "http://localhost:8081",
+                /* 开启跨域 */
+                changeOrigin:true,
+                pathRewrite:{
+                    '^/api':''
+                }
+            }
+        }
     },
 };

@@ -4,113 +4,38 @@
       <div class="col-md-12">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <router-link class="nav-link active" to="/test">Test</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <router-link class="nav-link" to="/evidence11H">Evidence11H</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Messages</a>
+            <router-link class="nav-link" to="/evidence12H">Evidence12H</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/evidence14H">Evidence14H</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/evidence18H">Evidence18H</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/phenomenon">Phenomenon</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/fault">Fault</router-link>
           </li>
           <li class="nav-item dropdown ml-md-auto">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">操作</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+              <router-link class="dropdown-item" to="/test">test</router-link>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
               <div class="dropdown-divider">
               </div> <a class="dropdown-item" href="#">Separated link</a>
             </div>
           </li>
         </ul>
-        <table class="table">
-          <thead>
-          <tr>
-            <th>
-              #
-            </th>
-            <th>
-              Product
-            </th>
-            <th>
-              Payment Taken
-            </th>
-            <th>
-              Status
-            </th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>
-              1
-            </td>
-            <td>
-              TB - Monthly
-            </td>
-            <td>
-              01/04/2012
-            </td>
-            <td>
-              Default
-            </td>
-          </tr>
-          <tr class="table-active">
-            <td>
-              1
-            </td>
-            <td>
-              TB - Monthly
-            </td>
-            <td>
-              01/04/2012
-            </td>
-            <td>
-              Approved
-            </td>
-          </tr>
-          <tr class="table-success">
-            <td>
-              2
-            </td>
-            <td>
-              TB - Monthly
-            </td>
-            <td>
-              02/04/2012
-            </td>
-            <td>
-              Declined
-            </td>
-          </tr>
-          <tr class="table-warning">
-            <td>
-              3
-            </td>
-            <td>
-              TB - Monthly
-            </td>
-            <td>
-              03/04/2012
-            </td>
-            <td>
-              Pending
-            </td>
-          </tr>
-          <tr class="table-danger">
-            <td>
-              4
-            </td>
-            <td>
-              TB - Monthly
-            </td>
-            <td>
-              04/04/2012
-            </td>
-            <td>
-              Call in to confirm
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <router-view></router-view>
       </div>
     </div>
   </div>
