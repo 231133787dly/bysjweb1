@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Main from './components/Main.vue'
-//import Test from './components/Test.vue'
+//import Test from './components/EssentialData.vue'
 // 引入jQuery、bootstrap
 import $ from 'jquery'
 import "bootstrap";
