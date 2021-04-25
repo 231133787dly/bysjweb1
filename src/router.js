@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 // 引入组件
-import Test from "./components/Test.vue";
+import EssentialData from "./components/EssentialData.vue";
 import Evidence11H from "./components/Evidence11H.vue";
 import Evidence12H from "./components/Evidence12H.vue";
 import Evidence14H from "./components/Evidence14H.vue";
@@ -14,8 +14,8 @@ Vue.use(VueRouter);
 
 const routes = [
     {
-        path:"/test",
-        component: Test
+        path:"/essentialData",
+        component: EssentialData
     },
     {
         path:"/evidence11H",

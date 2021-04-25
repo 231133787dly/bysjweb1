@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <ul class="nav">
           <li class="nav-item">
-            <router-link class="nav-link active" to="/test">Test</router-link>
+            <router-link class="nav-link active" to="/essentialData">EssentialData</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/evidence11H">Evidence11H</router-link>
@@ -27,11 +27,8 @@
           <li class="nav-item dropdown ml-md-auto">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">操作</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-              <router-link class="dropdown-item" to="/test">test</router-link>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider">
-              </div> <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href="javascript:void(0);" v-on:click="createEssentialData()">生成基础数据</a>
+              <a class="dropdown-item" href="javascript:void(0);" v-on:click="deleteAll()">删除全部</a>
             </div>
           </li>
         </ul>
@@ -43,7 +40,19 @@
 
 <script>
 export default {
-name: "Main"
+name: "Main",
+  methods:{
+    deleteAll: function(){
+      var _this = this;
+      _this.$ajax.get('/faultData/deleteAll').then(function(){
+      })
+    },
+    createEssentialData: function(){
+      var _this = this;
+      _this.$ajax.get('/essentialData/all').then(function(){
+      })
+    },
+  }
 }
 </script>
 
