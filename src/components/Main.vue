@@ -24,6 +24,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/fault">Fault</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/rules">Rules</router-link>
+          </li>
           <li class="nav-item dropdown ml-md-auto">
             <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">操作</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">

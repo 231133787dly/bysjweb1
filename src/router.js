@@ -9,6 +9,7 @@ import Evidence14H from "./components/Evidence14H.vue";
 import Evidence18H from "./components/Evidence18H.vue";
 import Phenomenon from "./components/Phenomenon.vue";
 import Fault from "./components/Fault.vue";
+import Rules from "./components/Rules.vue";
 // 要告诉 vue 使用 vueRouter
 Vue.use(VueRouter);
 
@@ -40,6 +41,10 @@ const routes = [
     {
         path:"/fault",
         component: Fault
+    },
+    {
+        path:"/rules",
+        component: Rules
     },
 ]
 
